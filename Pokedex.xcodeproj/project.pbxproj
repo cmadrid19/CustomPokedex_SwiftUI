@@ -171,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E523E742558E2EF0017A5D7 /* Build configuration list for PBXProject "RegistrationApi" */;
+			buildConfigurationList = 9E523E742558E2EF0017A5D7 /* Build configuration list for PBXProject "Pokedex" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -389,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E523E742558E2EF0017A5D7 /* Build configuration list for PBXProject "RegistrationApi" */ = {
+		9E523E742558E2EF0017A5D7 /* Build configuration list for PBXProject "Pokedex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E523E862558E2F30017A5D7 /* Debug */,
