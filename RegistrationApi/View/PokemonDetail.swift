@@ -43,23 +43,28 @@ struct PokemonDetail: View {
                         .fontWeight(.heavy)
                         .foregroundColor(Color("text-color"))
                         .minimumScaleFactor(0.5)
-                        
-                    Spacer(minLength: 50)
+                    
+                    Spacer(minLength: 80)
                     
                     Text("\(pokemon.base.hp) HP")
                         .font(.body)
                         .fontWeight(.bold)
                         .foregroundColor(Color.red)
-                        
-                    HStack(spacing: -10){
-                        
-                        ForEach(pokemon.type, id: \.self) { type in
-                            Image(type.lowercased())
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 42, height: 42)
+                    
+                    VStack(alignment: HorizontalAlignment.trailing) {
+                        HStack(spacing: -10){
+                            
+                            ForEach(pokemon.type, id: \.self) { type in
+                                Image(type.lowercased())
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 42, height: 42)
+                                
+                            }
                         }
+                        
                     }
+                    
                     
                 }
                 .scaledToFit()
@@ -111,7 +116,7 @@ struct PokemonDetail: View {
             .background(getTypeColor())
             
             
-           
+            
         }
         .border(LinearGradient(gradient: Gradient(colors: colorsCardBorder), startPoint: .topLeading, endPoint: .bottomTrailing), width: 16)
         .cornerRadius(20)
@@ -130,7 +135,7 @@ struct PokemonDetail: View {
         }
         return LinearGradient(gradient: Gradient(colors: colors), startPoint: .topLeading, endPoint: .bottomTrailing)
     }
-   
+    
 }
 
 
@@ -145,7 +150,7 @@ struct PokemonDetail_Previews: PreviewProvider {
 
 var test = Pokemon(id: 611,
                    name: Name(english: "Fraxure", japanese: "オノンド", chinese: "斧牙龙", french: "Incisache"),
-                   type: ["Dragon", "Fire"],
+                   type: ["Dragon"],
                    base: Base(hp: 66, attack: 117, defense: 70, spAttack: 40, spDefense: 50, speed: 67))
 
 
